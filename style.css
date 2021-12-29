@@ -1,0 +1,241 @@
+/* ------------------------- GENERAL PARAMETERS ------------------------- */
+*, ::before, ::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    height: 100vh;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    background: #f1f1f1;
+    background: url(./mangeusedherbe.png) center/cover no-repeat;
+    font-family: 'Playfair Display', serif;
+    overflow-y: hidden;
+    
+}
+
+
+/*---------------------------- CONTENT STYLE ---------------------------- */
+h1 {
+    text-align: center;
+    color: white;
+    margin-top: 3%;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: clamp(3vw, 3.1vw, 35vw);
+}
+
+.lowercase {
+    text-transform: capitalize;
+}
+
+.space {
+    line-height: 200%;
+}
+
+.lowercase:hover {
+    text-decoration: underline 2px;
+}
+
+.container {
+    width: 60%;
+    margin: auto;
+    margin-top: 3%;
+    height: 61vh;
+    background:rgba(155, 140, 112, 0.788);
+    border-radius: 2px;
+    box-shadow: 0 0 10px rgba(161, 99, 99, 0.7);   
+}
+
+.container-onglets {
+    background: #f1f1f1;
+    color: #72322d;
+    width: 100%;
+    height: 12vh;
+    display: flex;
+    border-bottom: 1px solid #333;
+}
+
+.onglets {
+    width: 33.33%;
+    height: 12vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 140%;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.onglets:not(:nth-child(3)) {
+    border-right: 1px solid #333;
+}
+
+.contenu{
+    height: 70%;
+    font-size: 17px;
+    width: 100%;
+    position: absolute;
+    opacity: 0; 
+    width: 50%;
+    padding-left: 3%;
+    color: white;
+}
+
+a {
+    color: #1b4700;
+    font-weight: bolder;
+}
+
+.contenu h3, .contenu p {
+    padding: 20px;
+}
+
+.contenu hr {
+    width: 100px;
+    height: 2px;
+    margin-left: 20px;
+    background: #72322d;
+    border:none;
+}
+
+/*----- TABS' ANIMATION ----- */
+
+.active-onglets {
+    background: #1b4700;
+    color: #f1f1f1;
+    transition: all 0.3s ease;
+    
+}
+
+.active-contenu {
+    animation: fade 0.5s forwards;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/*----------------------------  RESPONSIVE ----------------------------   */
+
+@media(max-width:1204px){
+
+    .container {
+        height: 68vh;
+    }
+}
+
+@media(max-width:955px){
+
+    h1 {
+        font-size: clamp(3vw, 4.5vw, 15vw);
+    }
+
+    .container{
+        width: 75%;
+        height: 73vh;
+    }
+}
+
+@media (max-width:765px) {
+
+    body{
+        overflow-y: visible;
+    }
+    
+    .container {
+        height: 77vh;
+    }
+
+    .contenu {
+        padding-left: 5%;
+    }
+}
+
+@media (max-width:755px) {
+
+    body {
+        height:150vh;
+        background-size:cover;
+    }
+    
+    .contenu {
+        padding-left: 5%;
+    }
+
+    .container {
+        height: 93vh;
+    }
+}
+
+
+@media(max-width:605px){
+
+    body {
+        height:140vh;
+
+    }
+
+    h1 {
+        font-size: clamp(4vw, 5.5vw, 15vw);
+    }
+}
+
+@media (max-width:539px) {
+    
+    .container {
+        height: 100vh;
+    }
+
+    .contenu {
+        padding-left: 7%;
+    }
+}
+
+@media (max-width:500px) {
+    
+    body {
+        height:150vh;
+
+    }
+
+    .container {
+        height: 106vh;
+    }
+
+}
+
+@media (max-width:463px) {
+    
+
+    h1 {
+        font-size: clamp(6vw, 6.5vw, 15vw);
+    }
+
+}
+
+@media (max-width:425px) {
+    
+    .container {
+        height: 135vh;
+    }
+}
+
+@media (max-width:320px) {
+    
+    body {
+        height:190vh;
+    }
+
+    .container {
+        height: 155vh;
+    }
+}
