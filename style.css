@@ -81,22 +81,21 @@ h1 {
     opacity: 0; 
     width: 58%;
     padding-left: 3%;
-    color: white;
-    
+    color: white;   
 }
 
-a {
-    color: #1b4700;
-    font-weight: bolder;
+ul {
+    line-height: 150%;
 }
 
-..contenu h3{
+.contenu h3{
     width: 110%;
 }
 
 .contenu h3, .contenu p {
-    padding: 20px;
+    padding: 15px;
 }
+
 
 .contenu hr {
     width: 100px;
@@ -116,7 +115,7 @@ a {
 }
 
 .active-contenu {
-    animation: fade 0.5s forwards;
+    animation:fade 0.5s forwards;
 }
 
 @keyframes fade {
