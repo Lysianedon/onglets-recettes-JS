@@ -16,8 +16,8 @@ body{
     
 }
 
-
 /*---------------------------- CONTENT STYLE ---------------------------- */
+
 h1 {
     text-align: center;
     color: white;
@@ -46,7 +46,7 @@ h1 {
     height: 61vh;
     background:rgba(155, 140, 112, 0.788);
     border-radius: 2px;
-    box-shadow: 0 0 10px rgba(161, 99, 99, 0.7);   
+    box-shadow: 0 0 10px rgba(161, 99, 99, 0.7); 
 }
 
 .container-onglets {
@@ -64,8 +64,8 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 140%;
     font-weight: 700;
+    font-size: 120%;
     cursor: pointer;
 }
 
@@ -79,9 +79,10 @@ h1 {
     width: 100%;
     position: absolute;
     opacity: 0; 
-    width: 50%;
+    width: 52%;
     padding-left: 3%;
     color: white;
+    
 }
 
 a {
@@ -239,3 +240,4 @@ a {
         height: 155vh;
     }
 }
+
