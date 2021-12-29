@@ -221,12 +221,21 @@ a {
         font-size: clamp(6vw, 6.5vw, 15vw);
     }
 
+    .onglets{
+        font-size: 100%;
+    }
+
 }
 
 @media (max-width:425px) {
     
     .container {
         height: 135vh;
+    }
+
+
+    .onglets{
+        font-size: 90%;
     }
 }
 
