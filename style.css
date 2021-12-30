@@ -233,9 +233,12 @@ ul {
 @media (max-width:425px) {
     
     .container {
-        height: 135vh;
+        height: 144vh;
     }
 
+    body {
+        height:192vh;
+    }
 
     .onglets{
         font-size: 90%;
@@ -244,9 +247,6 @@ ul {
 
 @media (max-width:320px) {
     
-    body {
-        height:190vh;
-    }
 
     .container {
         height: 155vh;
