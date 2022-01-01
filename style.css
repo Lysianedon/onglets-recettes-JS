@@ -181,6 +181,7 @@ ul {
 }
 
 
+
 @media(max-width:605px){
 
     body {
@@ -192,6 +193,8 @@ ul {
         font-size: clamp(4vw, 5.5vw, 15vw);
     }
 }
+
+
 
 @media (max-width:539px) {
     
@@ -245,10 +248,52 @@ ul {
     }
 }
 
+
 @media (max-width:320px) {
     
 
     .container {
         height: 155vh;
     }
+}
+
+@media (max-width:1150px) and (orientation:landscape) {
+    
+    .container {
+        height: 134vh;
+    }
+
+    body {
+        height:172vh;
+        background-size: 130%;
+        overflow-y: visible;
+    }
+
+}
+
+
+@media (max-width:675px) and (orientation:landscape) {
+    
+    .container {
+        height: 174vh;
+    }
+
+    body {
+        height:232vh;
+        background-size: 230%;
+    }
+
+}
+
+@media (max-width:565px) and (orientation:landscape) {
+    
+    .container {
+        height: 274vh;
+    }
+
+    body {
+        height:312vh;
+        background-size: 490%;
+    }
+
 }
